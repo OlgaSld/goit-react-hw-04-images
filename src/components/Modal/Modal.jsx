@@ -9,8 +9,8 @@ export const Modal = (onModalClick, largeImage, alt) => {
 
   const handleKeyDown = evt => {
     if (evt.code === 'Escape') {
-     onModalClick();
-    }
+    onModalClick();
+    }  
   };
     
     window.addEventListener('keydown', handleKeyDown);
@@ -26,7 +26,6 @@ export const Modal = (onModalClick, largeImage, alt) => {
       onModalClick();
     }
   };
-
     return createPortal(
       <Overlay onClick={onBackDropClose}>
         <ModalWindow>
