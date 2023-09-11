@@ -4,7 +4,7 @@ import { Overlay, ModalWindow } from './Modal_styled';
 
 const modalRoot = document.querySelector('#modal-root');
 
-export const Modal = (onModalClick, largeImage, alt) => {
+export const Modal = (onModalClick, largeImage, alt, onClick) => {
     useEffect(() => {
 
   const handleKeyDown = evt => {
@@ -23,7 +23,7 @@ export const Modal = (onModalClick, largeImage, alt) => {
 
   const onBackDropClose = evt => {
     if (evt.target === evt.currentTarget) {
-      onModalClick();
+      onClick();
     }
   };
     return createPortal(

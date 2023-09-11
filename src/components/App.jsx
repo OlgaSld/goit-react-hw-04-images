@@ -93,7 +93,7 @@ export const App = () => {
             {showModal && (
                 <Modal
                     onModalClick={toggleModal}
-                    largeImage={largeImg.largeImageURL}
+                    largeImage={largeImg}
                     alt={largeImg.tags}
                 />
             )}
