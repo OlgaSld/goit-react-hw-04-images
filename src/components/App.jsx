@@ -94,7 +94,6 @@ export const App = () => {
                 <Modal
                     onModalClick={toggleModal}
                     largeImage={largeImg}
-                    alt={largeImg.tags}
                 />
             )}
             <Toaster position="top-right" />
